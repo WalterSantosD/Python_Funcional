@@ -3,7 +3,7 @@
 
 deslocamento = 1
 
-codificar_senha = lambda senha :  chr(ord(senha)+1) # type(senha)==int and senha+deslocamento or type(senha) == str and  
+codificar_senha = lambda senha :  chr(ord(senha)+deslocamento) # type(senha)==int and senha+deslocamento or type(senha) == str and  
 
 cadastrar_cliente = lambda cpf,nome,idade,senha : {cpf:[nome,idade,  "".join(list(map(codificar_senha,str(senha))))  ]}# codificar_senha(senha)
 
